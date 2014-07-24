@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @recent_blog = Blog.all.last(5)
   end
 end
 def create
