@@ -1,9 +1,0 @@
-<h1>This is the show view for Blog</h1>
-<div>
-  <h2><%= @blog.title %></h2>
-  <em>Published <%= @blog.created_at.strftime('%b %d, %Y') %></em><p></p>
-  <p>Filed under: <% @blog.categories.each do |category| %>
-    <%= link_to category.name, category %>&nbsp;<% end %>
-  </p>
-  <div><%= @blog.content %></div>
-</div>
