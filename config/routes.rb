@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :blogs
+
   get 'welcome/index'
 
   devise_for :users
@@ -9,7 +11,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root "home#index"
-  resources :blog
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
