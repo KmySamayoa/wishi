@@ -1,9 +1,12 @@
 <h1>Welcome to Wishi</h1>
 <p>Find me in app/views/home/index.html.erb</p>
 <p>Check out our 5 most recent blogs.</p>
+<p>To check out the rest sign in.</p>
 
 <%= link_to "Sign up",new_user_registration_path %>
 
 <%= link_to "Sign in",new_user_session_path %>
 
 <%= button_to("Sign out", destroy_user_session_path, :method => :delete) if user_signed_in? %>
+
+
