@@ -1,13 +1,18 @@
 <h1>Welcome to Wishi</h1>
-<p>Check out our 5 most recent blogs.</p>
- 
 
+   <% @blogs.each do |blog| %>
+	<h2>
+      <%= link_to blog.title, blog %>
+  </h2>
+   <% end %>
+<% if not user_signed_in? %>
+<p>Check out our 5 most recent blogs.</p>
 <p>To check out the rest sign in.</p>
+<% end %>
 
 <%= link_to "Sign up",new_user_registration_path %>
 
 <%= link_to "Sign in",new_user_session_path %>
 
 <%= button_to("Sign out", destroy_user_session_path, :method => :delete) if user_signed_in? %>
-
 

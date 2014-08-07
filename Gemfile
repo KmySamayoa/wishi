@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+group :production do
+  gem 'table'
+end
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
