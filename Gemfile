@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 group :production do
-  gem 'table'
+ gem 'rails_12factor'
 end
 
 gem 'devise'
