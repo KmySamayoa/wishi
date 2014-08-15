@@ -22,7 +22,8 @@
 <%= button_to "Sign in",new_user_session_path %>
 
 <%= button_to("Sign out", destroy_user_session_path, :method => :delete) if user_signed_in? %>
-  
+  <div class="lists">
+			<div class="list-box">
 					<li>
     					<a href="mailto:wishi@fashionwishi.com" target="_blank" class="icon email"></a>
   					</li>
@@ -32,5 +33,6 @@
   					<li>
     					<a href="https://www.facebook.com/fashionwishi" target="_blank" class="icon facebook"></a>
   					</li>
-				</ul>
+    </div>
+  </div>
 
