@@ -10,9 +10,9 @@
 <p>To check out the rest sign in.</p>
 <% end %>
 
-<%= link_to "Sign up",new_user_registration_path %>
+<%= button_to "Sign up",new_user_registration_path %>
 
-<%= link_to "Sign in",new_user_session_path %>
+<%= button_to "Sign in",new_user_session_path %>
 
 <%= button_to("Sign out", destroy_user_session_path, :method => :delete) if user_signed_in? %>
 
